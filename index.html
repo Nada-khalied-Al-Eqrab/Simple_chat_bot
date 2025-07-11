@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شات بوت الأسئلة الشائعة</title>
+  <link rel="stylesheet" href="style_chat.css">
+</head>
+<body>
+  <div class="page-content">
+    <h1>مرحبًا بك في موقعنا!</h1>
+    <p>هذا نص تجريبي يمثل محتوى الموقع ليكون خلف الشات بوت.</p>
+  </div>
+
+  <div id="chat-toggle" onclick="toggleChat()">💬</div>
+
+  <div class="chat-container hidden" id="chat-container">
+    <div class="chat-header">
+      شات بوت الأسئلة الشائعة 🤖
+      <span onclick="toggleChat()" style="cursor:pointer; float:left;">✖</span>
+    </div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="اكتب سؤالك هنا..." />
+      <button onclick="sendMessage()">إرسال</button>
+    </div>
+  </div>
+
+  <script src="script_chat.js"></script>
+</body>
+</html>
